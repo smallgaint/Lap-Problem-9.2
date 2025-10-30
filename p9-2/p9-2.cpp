@@ -8,7 +8,12 @@ bool hasAdjecentDuplicates(int arr[], int size);
 bool hasDuplicates(int arr[], int size);
 
 int main() {
-	int array[6] = { 1, 3, 3, 7, 9, 11 };
+	int array[6];
+
+	for (int i = 0; i < 6; i++) {
+		cout << "Enter integer #" << i << ": ";
+		cin >> array[i];
+	}
 
 	if (isSortedIncreasing(array, 6)) cout << "The data are increasing.\n";
 	else cout << "The data are not increasing.\n";
